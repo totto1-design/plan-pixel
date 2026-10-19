@@ -79,7 +79,9 @@ Acordadas el 19/10/2026 (boceto aprobado ese día). Viven en `js/datos.js` y `js
 
 **19/10/2026: primera versión construida y probada.** Hecho: investigación, tanda de preguntas, boceto aprobado, reglas acordadas, app completa (bienvenida + 7 pasos + supuestos y fuentes, modo día y noche, celular y PC) y 24 pruebas del cálculo en verde (`tests/index.html`). Probada como principiante con el ejemplo y desde cero.
 
-**Siguiente: publicar en GitHub Pages**, guiando al usuario de a un paso: (1) instalar Git y GitHub CLI con winget (pedir su OK; puede aparecer un cartel de Windows), (2) que inicie sesión en GitHub una vez (`gh auth login` por el navegador), (3) crear el repo público `plan-pixel` y subir, (4) activar Pages y probar el link en su celular. Recién ahí mostrársela.
+**19/10/2026: publicada.** App: **https://totto1-design.github.io/plan-pixel/** · Repo público: https://github.com/totto1-design/plan-pixel (rama `main`, Pages desde la raíz). Se instalaron Git 2.55 y GitHub CLI 2.102 con winget; sesión iniciada como `totto1-design`. Los commits usan el mail privado de GitHub (`337902685+totto1-design@users.noreply.github.com`, configurado solo en este repo). Para publicar un cambio: `git add -A`, `git commit` y `git push` (Pages se actualiza solo en 1 o 2 minutos). Probada en la dirección real: 24 de 24 pruebas OK.
+
+**Siguiente:** que el usuario la pruebe en su celular y nos cuente qué le cambiaría. Después, según lo que diga: ajustes, y ofrecerle convertirla en app instalable (PWA).
 
 Ideas para después (no prometidas): PWA instalable, dólar MEP automático (DolarApi), precios reales de CEDEAR para los mínimos.
 
