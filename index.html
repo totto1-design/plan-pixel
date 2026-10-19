@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Plan Pixel</title>
+  <meta name="description" content="Aprendé a invertir armando tu propio plan, paso a paso, con números reales de Argentina. Educativo: no es asesoramiento financiero.">
+  <meta name="theme-color" content="#F6EFDF">
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>
+    // Aplica el modo elegido antes de dibujar, para que no parpadee.
+    try {
+      const tema = localStorage.getItem('planpixel.tema');
+      if (tema) document.documentElement.dataset.tema = tema;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="app">
+    <header class="barra">
+      <a class="logo" href="#inicio" aria-label="Plan Pixel, volver al inicio"><span id="logo"></span><span>PLAN PIXEL</span></a>
+      <button type="button" class="boton-tema" id="boton-tema" aria-label="Cambiar modo"></button>
+    </header>
+    <nav class="progreso" id="progreso" aria-label="Pasos del plan" hidden></nav>
+    <main id="pantalla" class="contenido"></main>
+    <footer class="pie">
+      Es para aprender, no es asesoramiento financiero · <a href="#supuestos">Supuestos y fuentes</a>
+    </footer>
+  </div>
+  <noscript><p class="aviso">Plan Pixel necesita JavaScript para hacer las cuentas. Activalo en tu navegador.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Datos personales (cartera, montos, plan propio): nunca al repositorio público.
+privado/
+MI-PLAN*.txt
+
+# Claves y configuraciones locales.
+.env
+*.local.json
+.claude/settings.local.json
+
+# Archivos del sistema.
+Thumbs.db
+desktop.ini
+.DS_Store
